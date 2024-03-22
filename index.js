@@ -13,6 +13,10 @@ const PORT = process.env.PORT || 8000;
 
 DBconnection();
 
+app.get("/", (req, res) => {
+  res.send("file server working!!");
+});
+
 app.listen(PORT, () => {
   console.log(`Server Running On Port ${PORT}`);
 });
